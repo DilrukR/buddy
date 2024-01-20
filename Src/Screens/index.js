@@ -1,0 +1,9 @@
+export { default as SplashScreen } from "./Splash";
+export { default as Home } from "./Home";
+export { default as ProfileScreen } from "./ProfileScreen";
+export { default as FoodList } from "./FoodList";
+export { default as Myorders } from "./MyOrders";
+export { default as Login } from "./Login";
+export { default as Intro } from "./IntroScreen";
+export { default as Complete } from "./CompleteProfile";
+export { default as MedicleCenter } from "./MedicleCenter";

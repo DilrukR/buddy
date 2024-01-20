@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import StackScreens from "./Src/Routes/StackScreens";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { gestureHandlerRootHOC } from "react-native-gesture-handler";
+import CompleteProfile from "./Src/Screens/CompleteProfile";
+import * as SplashScreen from "expo-splash-screen";
 
 export default function App() {
+
+  console.disableYellowBox = true;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar />
+      <StackScreens />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
