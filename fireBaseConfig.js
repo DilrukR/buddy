@@ -1,19 +1,20 @@
 import { initializeApp } from "firebase/app";
+import {API_KEY , AUTH_DOMAIN , PROJECT_ID, STORAGE_BUCK,SENDER_ID,APP ID } from "@env";
 import {
   getAuth,
   initializeAuth,
   getReactNativePersistence,
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import ReactNativeAsyncStorage from "@react-native-async-storage/async-storage"; // Corrected import
+import ReactNativeAsyncStorage from "@react-native-async-storage/async-storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA8Ib7fnKSPH16fsXrT6g_WDgqZBCBc9PU",
-  authDomain: "canteen-buddy.firebaseapp.com",
-  projectId: "canteen-buddy",
-  storageBucket: "canteen-buddy.appspot.com",
-  messagingSenderId: "949865349467",
-  appId: "1:949865349467:web:fe5002ad644aedd4aada7e",
+  apiKey: API_KEY ,
+  authDomain: AUTH_DOMAIN ,
+  projectId: PROJECT_ID,
+  storageBucket:  STORAGE_BUCK ,
+  messagingSenderId: SENDER_ID,
+  appId: APP ID,
 };
 
 export const FIREBASE_APP = initializeApp(firebaseConfig);
