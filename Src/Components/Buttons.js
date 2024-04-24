@@ -75,13 +75,13 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   item: {
-    width: INNER_WIDTH / 3 - 30, // Adjust width to fit three columns with equal spacing
+    width: INNER_WIDTH / 3 - 30,
     height: INNER_WIDTH / 3.9,
     backgroundColor: "#fff",
     marginBottom: 10,
-    marginLeft: 20, // Vertical spacing
-    alignItems: "center", // Center the text horizontally
-    justifyContent: "center", // Center the text vertically
+    marginLeft: 20, 
+    alignItems: "center", 
+    justifyContent: "center",
     borderRadius: 20,
     shadowColor: "#7F5DF0",
     shadowOffset: {
